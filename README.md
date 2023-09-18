@@ -12,17 +12,17 @@ Os benchmarks são feitos utilizando o [hyperfine](https://github.com/sharkdp/hy
 Para rodas os benchmarks basta baixar o hyperfine e rodar o script benchmark, com a seguinte sintaxe:
 
 ```sh
-> ./benchmark.sh <algoritmo> <forma> <n>
+> ./benchmark.sh <algoritmo> <modo> <n>
 ```
 
 Onde <algoritmo> é um dos algoritmos implementados para benchmark, 
-forma é a maneira que o algoritmo irá rodar (iterativo ou recursivo)
+modo é a maneira que o algoritmo irá rodar (iterativo ou recursivo)
 e n é o parâmetro `n` aceito por todos os algoritmos.
 
 | Parâmetro | Possíveis Valores |
----------------------------------
+|-----------|-------------------|
 | algoritmo | bubble\_sort ou eratostenes\_siege ou factorial ou fibonacci |
-| forma | iterative ou tail (se houver implementação recursiva) |
+| modo | iterative ou tail (se houver implementação recursiva) |
 | n | qualquer valor inteiro |
 
 Por padrão serão rodados 50 tests warmup antes de se iniciar o benchmark,
